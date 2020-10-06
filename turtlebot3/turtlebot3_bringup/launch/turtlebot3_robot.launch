@@ -1,0 +1,16 @@
+<launch>
+  <arg name="multi_robot_name" default=""/>
+  <arg name="set_lidar_frame_id" default="base_scan"/>
+
+  <include file="$(find roborts_base)/roborts_base.launch">
+ </include>
+  <include file="$(find turtlebot3_bringup)/launch/turtlebot3_lidar.launch">
+    <arg name="set_frame_id" value="$(arg set_lidar_frame_id)"/>
+ </include>
+
+   <!-- tcp driver -->
+  <node pkg="agv_tcp_driver" name="agv_tcp_node" type="agv_tcp_node" respawn ="true" output = "screen" />
+
+
+  
+</launch>

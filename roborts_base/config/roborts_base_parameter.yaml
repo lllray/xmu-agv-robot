@@ -1,0 +1,3 @@
+serial_port : "/dev/ttyUSB0"
+#serial_port : "/dev/pts/21"
+serial_baudrate : 115200

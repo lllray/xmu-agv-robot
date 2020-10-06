@@ -1,0 +1,47 @@
+DWAPlannerROS:
+
+# Robot Configuration Parameters
+  max_vel_x: 0.5 #机器人的最大x速度
+  min_vel_x: 0.0
+
+  max_vel_y: 0.0 #机器人的最大y速度
+  min_vel_y: 0.0
+
+# The velocity when robot is moving in a straight line
+  max_trans_vel:  0.50 #机器人最大平移速度的绝对值
+  min_trans_vel:  0.15
+
+  max_rot_vel: 0.3 #机器人最大旋转速度的绝对值，单位为rad / s
+  min_rot_vel: 0.15
+
+  acc_lim_x: 1.0 #机器人的x加速度极限，单位为米/秒^ 2
+  acc_lim_y: 0.0
+  acc_lim_theta: 2.0 #机器人的旋转加速度极限以弧度/秒^ 2为单位
+
+# Goal Tolerance Parametes
+  xy_goal_tolerance: 0.20 #0.05 #达到目标时，控制器在x和y距离内的公差（米）
+  yaw_goal_tolerance: 0.30  #0.17 实现目标时控制器在偏航/旋转时的弧度公差
+  latch_xy_goal_tolerance: ture #如果目标公差被锁定，如果机器人到达目标xy位置，它将简单地旋转到位，即使它在目标公差范围之外结束时也是如此。
+
+# Forward Simulation Parameters
+  sim_time: 1.5
+  vx_samples: 3 #探索x速度空间时使用的样本数
+  vy_samples: 0
+  vtheta_samples: 100 #探索θ速度空间时使用的样本数
+  controller_frequency: 10.0 
+
+# Trajectory Scoring Parameters
+  path_distance_bias: 32.0 #控制器应该保持接近其给定路径的加权
+  goal_distance_bias: 200.0 #20 控制器应该尝试达到其本地目标的多少的权重也控制速度
+  occdist_scale: 1.0 #0.2 控制器应该试图避开障碍物的重量
+  forward_point_distance: 0.325 #距离机器人中心点的距离，以米为单位放置一个额外的得分点
+  stop_time_buffer: 0.2 #机器人在碰撞之前必须停止的时间量，以便在几秒钟内将轨迹视为有效
+  scaling_speed: 0.25 #开始缩放机器人足迹的速度的绝对值，单位为m / s
+  max_scaling_factor: 0.2 #用于缩放机器人足迹的最大因素
+
+# Oscillation Prevention Parameters
+  oscillation_reset_dist: 0.05
+
+# Debugging
+  publish_traj_pc : true
+  publish_cost_grid_pc: true

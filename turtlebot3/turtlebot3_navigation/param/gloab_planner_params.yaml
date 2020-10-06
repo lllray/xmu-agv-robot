@@ -1,0 +1,6 @@
+GlobalPlanner:
+
+   default_tolerance: 0.05
+   use_dijkstra: false
+   planner_window_x: 10
+   planner_window_y: 10

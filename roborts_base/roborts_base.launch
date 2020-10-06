@@ -1,0 +1,8 @@
+<launch>
+
+  <node pkg="roborts_base" type="roborts_base_node" name="roborts_base_node" output="screen">
+  
+  <rosparam command="load" file="$(find roborts_base)/config/roborts_base_parameter.yaml"/>
+  </node>
+  
+</launch>

@@ -1,0 +1,18 @@
+/home/ray/APP/Clion/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ray/ROS/turtlebot3_ws/src/navigation/dwa_local_planner
+-- Using CATKIN_DEVEL_PREFIX: /home/ray/ROS/turtlebot3_ws/src/navigation/dwa_local_planner/cmake-build-debug/devel
+-- Using CMAKE_PREFIX_PATH: /home/ray/ROS/tcpip_map_driver/devel;/home/ray/ROS/open_slam/devel;/home/ray/ROS/rm_serial_driver/devel;/home/ray/ROS/catkin_pionner/devel;/home/ray/ROS/xyi2_ws/devel;/home/ray/ROS/turtlebot3_ws/devel;/home/ray/ROS/cartographer_ws/install_isolated;/home/ray/rplidar_driver/devel;/opt/ros/kinetic
+-- This workspace overlays: /home/ray/ROS/tcpip_map_driver/devel;/home/ray/ROS/open_slam/devel;/home/ray/ROS/rm_serial_driver/devel;/home/ray/ROS/catkin_pionner/devel;/home/ray/ROS/xyi2_ws/devel;/home/ray/ROS/turtlebot3_ws/devel;/home/ray/ROS/cartographer_ws/install_isolated;/home/ray/rplidar_driver/devel;/opt/ros/kinetic
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/ray/ROS/turtlebot3_ws/src/navigation/dwa_local_planner/cmake-build-debug/test_results
+-- Found gmock sources under '/usr/src/gmock': gmock will be built
+-- Found gtest sources under '/usr/src/gmock': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.14
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ray/ROS/turtlebot3_ws/src/navigation/dwa_local_planner/cmake-build-debug

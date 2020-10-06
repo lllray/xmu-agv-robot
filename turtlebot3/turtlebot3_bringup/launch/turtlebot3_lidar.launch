@@ -1,0 +1,10 @@
+<launch>
+  <arg name="set_frame_id" default="base_scan"/>
+
+  <arg name="host" default="169.254.223.32" />
+  <node pkg="lms1xx" name="lms1xx" type="LMS1xx_node" output="screen">
+  <param name="host" value="$(arg host)" />
+  <param name="frame_id" value="$(arg set_frame_id)"/>
+
+  </node>
+</launch>

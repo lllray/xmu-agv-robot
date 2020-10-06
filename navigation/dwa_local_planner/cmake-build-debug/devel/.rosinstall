@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ray/ROS/turtlebot3_ws/src/navigation/dwa_local_planner/cmake-build-debug/devel/setup.sh

@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/ray/ROS/turtlebot3_ws/devel/lib;/opt/ros/kinetic/lib")
